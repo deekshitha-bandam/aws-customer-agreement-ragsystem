@@ -37,12 +37,12 @@ def save_index_and_chunks(index, chunks):
 def load_index_and_chunks():
     if not Path(config.FAISS_INDEX_PATH).exists() or not Path(config.CHUNKS_PATH).exists():
         return None, None
-    
-    index = faiss.read_index(config.FAISS_INDEX_PATH)
-    
+
+    index = faiss.read_index(str(config.FAISS_INDEX_PATH))
+
     with open(config.CHUNKS_PATH, 'r') as f:
         chunks = json.load(f)
-    
+
     return index, chunks
 
 # Embeds a single query string into a vector.
