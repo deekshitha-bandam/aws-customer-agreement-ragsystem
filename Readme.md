@@ -482,7 +482,7 @@ This sends 35 realistic test questions:
 ### "Could not reach Ollama"
 - Verify ollama serve is running
 - Check Ollama is listening on http://localhost:11434
-- Verify model is pulled: ollama pull llama3.2
+- Verify model is pulled: ollama pull qwen2:0.5b
 
 ### "No document has been ingested yet"
 - Click "Ingest Document" button
