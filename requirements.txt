@@ -1,0 +1,14 @@
+langchain-ollama
+streamlit
+langchain
+langchain-openai
+langchain-community
+python-dotenv
+langchain_core
+langserve
+fastapi
+bs4
+pypdf
+faiss-cpu
+tools
+agents
